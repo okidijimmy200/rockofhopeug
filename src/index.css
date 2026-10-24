@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #18312b;
+  background: #fbf7ee;
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fbf7ee;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #fbf7ee;
+  background: #2b725e;
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-clay;
+  }
+
+  .eyebrow::before {
+    content: '';
+    @apply h-2 w-2 rounded-full bg-marigold;
+  }
+
+  .display-heading {
+    @apply font-display text-4xl leading-[0.98] tracking-[-0.045em] sm:text-5xl lg:text-6xl;
+  }
+
+  .body-copy {
+    @apply text-base leading-7 text-ink/70;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-marigold px-5 py-3 text-sm font-bold text-forest shadow-[0_10px_25px_rgba(217,139,99,0.24)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#E7A47F] focus:outline-none focus:ring-2 focus:ring-marigold focus:ring-offset-2 focus:ring-offset-forest;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-forest/20 bg-transparent px-5 py-3 text-sm font-bold text-forest transition duration-200 hover:-translate-y-0.5 hover:border-leaf hover:bg-moss focus:outline-none focus:ring-2 focus:ring-leaf focus:ring-offset-2;
+  }
+
+  .button-ghost {
+    @apply inline-flex items-center gap-2 text-sm font-bold text-leaf transition hover:gap-3 hover:text-forest;
+  }
+}
+
+.hero-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 0.6px, transparent 0.6px);
+  background-size: 7px 7px;
+  mix-blend-mode: soft-light;
+}
+
+.paper-grid {
+  background-image: linear-gradient(rgba(43, 114, 94, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(43, 114, 94, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+

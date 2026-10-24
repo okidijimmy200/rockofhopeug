@@ -1,0 +1,10 @@
+{
+  "routes": [
+    { "path": "/", "title": "Rock of Hope Mission" },
+    { "path": "/who-we-are", "title": "Who We Are" },
+    { "path": "/history", "title": "History & Founder Story" },
+    { "path": "/sponsorship", "title": "Child Sponsorship" },
+    { "path": "/economic-empowerment", "title": "Economic Empowerment" },
+    { "path": "/child-protection", "title": "Child Protection" }
+  ]
+}
